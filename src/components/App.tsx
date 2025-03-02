@@ -1,9 +1,18 @@
 import '../styles/App.css'
+import { Token } from './ui/Token';
+import { tokens } from '../ts/constants';
 
 export function App() {
+  console.log(tokens);
   return (
-    <div>
-      <h1>Rock, Paper, Scissors Spook</h1>
-    </div>
+    <>
+      {
+        Object.values(tokens).map((token) => {
+          return (
+            <Token key={token.name} name={token.name} url={token.url} />
+          )
+        })
+      }
+    </>
   )
-}
+} 
