@@ -1,10 +1,10 @@
-import { Score } from '@components/ui/Score';
+import '@styles/Header.css';
 
-export function Header() {
+export function Header({ children }: any) {
   return (
     <header>
-      <img src="images/logo.svg" alt="logo"></img>
-      <Score score={0} />
+      <img src="images/logo-bonus.svg" alt="logo"></img>
+      {children}
     </header>
   )
 }

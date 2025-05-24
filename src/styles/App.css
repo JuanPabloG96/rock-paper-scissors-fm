@@ -1,0 +1,11 @@
+main {
+  width: 100%;
+  min-height: 350px;
+  margin: 45px;
+
+  position: relative;
+
+  background-image: url("/public/images/bg-pentagon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

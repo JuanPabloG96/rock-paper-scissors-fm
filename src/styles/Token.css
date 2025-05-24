@@ -1,0 +1,45 @@
+.token {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  box-shadow: inset 0 -5px rgba(0, 0, 0, 0.3);
+  position: absolute;
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    box-shadow: inset 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.scissors {
+  background-image: var(--scissors);
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.paper {
+  background-image: var(--paper);
+}
+
+.rock {
+  background-image: var(--rock);
+}
+
+.lizard {
+  background-image: var(--lizard);
+}
+
+.spock {
+  background-image: var(--spock);
+}
